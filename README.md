@@ -18,7 +18,7 @@ Installation
 ------------
 
 ```
-npm install @isnotdefined/stylelint-plugin
+npm install @isnotdefined/stylelint-plugin --save-dev
 ```
 
 
