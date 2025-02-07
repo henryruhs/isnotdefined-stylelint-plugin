@@ -1,7 +1,8 @@
 import del from 'rollup-plugin-delete';
-import ts from 'rollup-plugin-ts';
+import typescript from '@rollup/plugin-typescript';
 import copy from 'rollup-plugin-copy';
-import PACKAGE from './package.json' assert { type: 'json' };
+
+import PACKAGE from './package.json' with { type: 'json' };
 
 export default
 {
@@ -19,7 +20,14 @@ export default
 		{
 			targets: 'build'
 		}),
-		ts(),
+		typescript(
+		{
+			compilerOptions:
+			{
+				rootDir: 'src',
+				declaration: false
+			}
+		}),
 		copy(
 		{
 			targets:
