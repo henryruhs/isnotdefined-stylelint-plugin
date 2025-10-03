@@ -1,5 +1,7 @@
+import type { LinterResult, LinterOptions } from 'stylelint';
+
 import { expect } from 'chai';
-import stylelint, { LinterResult, LinterOptions } from 'stylelint';
+import stylelint from 'stylelint';
 
 const { lint } : typeof stylelint = stylelint;
 

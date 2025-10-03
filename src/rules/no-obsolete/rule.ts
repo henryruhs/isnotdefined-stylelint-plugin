@@ -1,10 +1,12 @@
-import { Root } from 'postcss';
-import stylelint, { Rule, RuleContext, PostcssResult } from 'stylelint';
+import type { Options, AtRule, Property } from './option.interface';
+import type { Root } from 'postcss';
+import type { Rule, RuleContext, PostcssResult } from 'stylelint';
+
+import stylelint from 'stylelint';
 
 import { wording } from '../wording';
 
 import { defaultOptions } from './option';
-import { Options, AtRule, Property } from './option.interface';
 
 const { utils, createPlugin } : typeof stylelint = stylelint;
 const ruleName : string = '@isnotdefined/no-obsolete';

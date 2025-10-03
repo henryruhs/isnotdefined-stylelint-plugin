@@ -1,11 +1,14 @@
-import { Root } from 'postcss';
-import { ContainerBase, parse } from 'postcss-values-parser';
-import stylelint, { Rule, RuleContext, PostcssResult } from 'stylelint';
+import type { Options } from './option.interface';
+import type { Root } from 'postcss';
+import type { ContainerBase } from 'postcss-values-parser';
+import type { Rule, RuleContext, PostcssResult } from 'stylelint';
+
+import { parse } from 'postcss-values-parser';
+import stylelint from 'stylelint';
 
 import { wording } from '../wording';
 
 import { defaultOptions } from './option';
-import { Options } from './option.interface';
 
 const { utils, createPlugin } : typeof stylelint = stylelint;
 const ruleName : string = '@isnotdefined/unit-step';

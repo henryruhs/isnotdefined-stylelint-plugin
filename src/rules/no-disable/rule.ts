@@ -1,10 +1,12 @@
-import { Root } from 'postcss';
-import stylelint, { Rule, PostcssResult } from 'stylelint';
+import type { Options } from './option.interface';
+import type { Root } from 'postcss';
+import type { Rule, PostcssResult } from 'stylelint';
+
+import stylelint from 'stylelint';
 
 import { wording } from '../wording';
 
 import { defaultOptions } from './option';
-import { Options } from './option.interface';
 
 const { utils, createPlugin } : typeof stylelint = stylelint;
 const ruleName : string = '@isnotdefined/no-disable';

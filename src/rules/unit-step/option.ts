@@ -1,4 +1,4 @@
-import { Options } from './option.interface';
+import type { Options } from './option.interface';
 
 export const defaultOptions : Options =
 {
