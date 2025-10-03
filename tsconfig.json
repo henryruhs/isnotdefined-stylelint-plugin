@@ -2,7 +2,7 @@
 	"compilerOptions":
 	{
 		"outDir": "build",
-		"target": "es2015",
+		"target": "es2022",
 		"module": "esnext",
 		"moduleResolution": "node",
 		"declaration": true,
